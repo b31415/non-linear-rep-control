@@ -1,0 +1,26 @@
+{
+    "RepConfig": {
+        "control_mode": true,
+        "max_eval_instances": 100,
+        "max_new_tokens": 20
+    },
+    "methods": {
+        "zero-shot": {
+            "RepConfig": {"zero_shot": true},
+            "methods": {
+                "rep surface_3lvls 5var": {
+                    "RepConfig": {
+                        "representation_method": "surface",
+                        "rep_reader_kwargs": {"n_components": 3}
+                    },
+                    "RepInferenceConfig": {
+                        "concept_template_fraction": 0.6,
+                        "control_strength": -0.6,
+                        "n_variations_per_concept_level": 3,
+                        "control_func_kwargs": {"is_score_relative": true}
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,166 @@
+{
+    "RepConfig": {
+        "control_mode": true,
+        "max_eval_instances": 100,
+        "max_new_tokens": 20
+    },
+    "methods": {
+        "zero-shot": {
+            "RepConfig": {"zero_shot": true},
+            "methods": {
+                "contrast 0.2": {
+                    "RepConfig": {
+                        "representation_method": "contrast-vector"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2
+                    }
+                },
+                "contrast vec -0.2": {
+                    "RepConfig": {
+                        "representation_method": "contrast-vector"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": -0.2
+                    }
+                },
+                "contrast vec 0.1": {
+                    "RepConfig": {
+                        "representation_method": "contrast-vector"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.1
+                    }
+                },
+                "contrast vec -0.1": {
+                    "RepConfig": {
+                        "representation_method": "contrast-vector"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": -0.1
+                    }
+                },
+                "contrast vec 0.15": {
+                    "RepConfig": {
+                        "representation_method": "contrast-vector"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.15
+                    }
+                },
+                "contrast vec -0.15": {
+                    "RepConfig": {
+                        "representation_method": "contrast-vector"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": -0.15
+                    }
+                },
+                "contrast vec 0.05": {
+                    "RepConfig": {
+                        "representation_method": "contrast-vector"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.05
+                    }
+                },
+                "contrast vec -0.05": {
+                    "RepConfig": {
+                        "representation_method": "contrast-vector"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": -0.05
+                    }
+                },
+                "contrast vec 0.0": {
+                    "RepConfig": {
+                        "representation_method": "contrast-vector"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.0
+                    }
+                },
+                "taylor +0.2 30var o2": {
+                    "RepConfig": {
+                        "representation_method": "taylor"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 30,
+                        "order": 2
+                    }
+                },
+                "taylor +0.15 30var o2": {
+                    "RepConfig": {
+                        "representation_method": "taylor"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.15,
+                        "n_variations_per_concept_level": 30,
+                        "order": 2
+                    }
+                },
+                "taylor +0.10 30var o2": {
+                    "RepConfig": {
+                        "representation_method": "taylor"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.10,
+                        "n_variations_per_concept_level": 30,
+                        "order": 2
+                    }
+                },
+                "taylor +0.05 30var o2": {
+                    "RepConfig": {
+                        "representation_method": "taylor"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.05,
+                        "n_variations_per_concept_level": 30,
+                        "order": 2
+                    }
+                },
+                "taylor +0.0 30var o2": {
+                    "RepConfig": {
+                        "representation_method": "taylor"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.0,
+                        "n_variations_per_concept_level": 30,
+                        "order": 2
+                    }
+                },
+                "taylor -0.05 30var o2": {
+                    "RepConfig": {
+                        "representation_method": "taylor"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": -0.05,
+                        "n_variations_per_concept_level": 30,
+                        "order": 2
+                    }
+                },
+                "taylor -0.1 30var o2": {
+                    "RepConfig": {
+                        "representation_method": "taylor"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": -0.1,
+                        "n_variations_per_concept_level": 30,
+                        "order": 2
+                    }
+                },
+                "taylor -0.15 30var o2": {
+                    "RepConfig": {
+                        "representation_method": "taylor"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": -0.15,
+                        "n_variations_per_concept_level": 30,
+                        "order": 2
+                    }
+                }
+            }
+        }
+    }
+}

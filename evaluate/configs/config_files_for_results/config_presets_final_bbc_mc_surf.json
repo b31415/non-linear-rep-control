@@ -1,0 +1,94 @@
+{
+    "RepConfig": {
+        "control_mode": true,
+        "max_eval_instances": 100,
+        "max_new_tokens": 20
+    },
+    "methods": {
+        "zero-shot": {
+            "RepConfig": {"zero_shot": true},
+            "methods": {
+                "rep surface_9lvls 5var": {
+                    "RepConfig": {
+                        "representation_method": "surface"
+                    },
+                    "RepInferenceConfig": {
+                        "concept_template_fraction": 0.8,
+                        "control_strength": 0.5,
+                        "n_variations_per_concept_level": 5
+                    }
+                },
+                "rep surface_3lvls 5var": {
+                    "RepConfig": {
+                        "representation_method": "surface"
+                    },
+                    "RepInferenceConfig": {
+                        "concept_template_fraction": 0.3,
+                        "control_strength": 0.5,
+                        "n_variations_per_concept_level": 5
+                    }
+                },
+                "rep surface_5lvls 5var": {
+                    "RepConfig": {
+                        "representation_method": "surface"
+                    },
+                    "RepInferenceConfig": {
+                        "concept_template_fraction": 0.45,
+                        "control_strength": 0.5,
+                        "n_variations_per_concept_level": 5
+                    }
+                },
+                "rep surface_6lvls 5var": {
+                    "RepConfig": {
+                        "representation_method": "surface"
+                    },
+                    "RepInferenceConfig": {
+                        "concept_template_fraction": 0.55,
+                        "control_strength": 0.5,
+                        "n_variations_per_concept_level": 5
+                    }
+                },
+                "rep surface_7lvls 5var": {
+                    "RepConfig": {
+                        "representation_method": "surface"
+                    },
+                    "RepInferenceConfig": {
+                        "concept_template_fraction": 0.6,
+                        "control_strength": 0.5,
+                        "n_variations_per_concept_level": 5
+                    }
+                },
+                "rep surface_8lvls 5var": {
+                    "RepConfig": {
+                        "representation_method": "surface"
+                    },
+                    "RepInferenceConfig": {
+                        "concept_template_fraction": 0.7,
+                        "control_strength": 0.5,
+                        "n_variations_per_concept_level": 5
+                    }
+                },
+                "rep surface_10lvls 5var": {
+                    "RepConfig": {
+                        "representation_method": "surface"
+                    },
+                    "RepInferenceConfig": {
+                        "concept_template_fraction": 0.9,
+                        "control_strength": 0.5,
+                        "n_variations_per_concept_level": 5
+                    }
+                },
+                "rep surface_c1_0 5var": {
+                    "RepConfig": {
+                        "representation_method": "surface"
+                    },
+                    "RepInferenceConfig": {
+                        "concept_template_fraction": 1.0,
+                        "control_strength": 0.5,
+                        "n_variations_per_concept_level": 5
+                    }
+                }
+            }
+        }
+    }
+}

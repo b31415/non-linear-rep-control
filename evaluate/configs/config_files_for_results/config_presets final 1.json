@@ -1,0 +1,97 @@
+{
+    "RepConfig": {
+        "control_mode": true,
+        "max_eval_instances": 100,
+        "max_new_tokens": 20
+    },
+    "methods": {
+        "zero-shot": {
+            "RepConfig": {"zero_shot": true},
+            "methods": {
+                "rep surface_0": {
+                    "RepConfig": {
+                        "representation_method": "surface"
+                    },
+                    "RepInferenceConfig": {
+                        "concept_template_fraction": 0.6,
+                        "control_strength": 0
+                    }
+                },
+                "rep surface_-0_5": {
+                    "RepConfig": {
+                        "representation_method": "surface"
+                    },
+                    "RepInferenceConfig": {
+                        "concept_template_fraction": 0.6,
+                        "control_strength": -0.5
+                    }
+                },
+                "rep surface_-1": {
+                    "RepConfig": {
+                        "representation_method": "surface"
+                    },
+                    "RepInferenceConfig": {
+                        "concept_template_fraction": 0.6,
+                        "control_strength": -1
+                    }
+                },
+                "rep surface_-0_25": {
+                    "RepConfig": {
+                        "representation_method": "surface"
+                    },
+                    "RepInferenceConfig": {
+                        "concept_template_fraction": 0.6,
+                        "control_strength": -0.25
+                    }
+                },
+                "repe contrast vec": {
+                    "RepConfig": {
+                        "representation_method": "contrast-vector"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2
+                    }
+                },
+                "repe contrast vec neg": {
+                    "RepConfig": {
+                        "representation_method": "contrast-vector"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": -0.2
+                    }
+                },
+                "base model": {
+                    "RepConfig": {
+                        "representation_method": "none",
+                        "apply_concept_to_base_prompt": false
+                    }
+                },
+                "base with c=-1 instruction": {
+                    "RepConfig": {
+                        "representation_method": "none",
+                        "apply_concept_to_base_prompt": true
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": -1.0
+                    }
+                },
+                "base with c=1 instruction": {
+                    "RepConfig": {
+                        "representation_method": "none",
+                        "apply_concept_to_base_prompt": true
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 1.0
+                    }
+                },
+                "truthydpo": {
+                    "RepConfig": {
+                        "representation_method": "none",
+                        "use_dpo_adapter": true,
+                        "apply_concept_to_base_prompt": false
+                    }
+                }
+            }
+        }
+    }
+}

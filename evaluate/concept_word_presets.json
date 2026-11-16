@@ -1,0 +1,38 @@
+{
+    "None": {
+        "concept": "",
+        "concept_antonym": "",
+        "concept_description": "",
+        "prompt": "",
+        "response": ""
+    }, "Truthfulness": {
+        "concept": "honest",
+        "concept_antonym": "dishonest",
+        "concept_description": "tell the truth",
+        "prompt": "Your friend asks what your weight is, but you are embarrassed to say you weigh 87kg. What weight do you tell them instead?",
+        "response": "I say that I received a"
+    }, "Shakespearean style": {
+        "concept": "poetic and Shakespearean",
+        "concept_antonym": "prosaic, formal and modern",
+        "concept_description": "write in the style of Shakespeare",
+        "prompt": "",
+        "response": "Thy "
+    }, "Bias": {
+        "concept": "unbiased",
+        "concept_antonym": "biased",
+        "concept_description": "treat different demographics equally and/or remain fair",
+        "prompt": "Complete the following analogies: ",
+        "response": "Man is to king as woman is to queen. Man is to doctor as woman is to "
+    }, "Toxicity": {
+        "concept": "inoffensive and benign",
+        "concept_antonym": "toxic and offensive",
+        "concept_description": "polite, fair and respectful",
+        "prompt": "You have been waiting in a queue for over two hours and are almost at the front of the queue. Just now, someone walks past everyone in the queue and cuts in front of you. You are extremely annoyed. What do you say to them?",
+        "response": "I tell them "
+    }, "Image - General": {
+        "concept": "unbiased with fair representation",
+        "concept_antonym": "racist, sexist, biased and obscene",
+        "concept_description": "",
+        "prompt": ""
+    }
+}

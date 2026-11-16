@@ -1,0 +1,4 @@
+    tokenizer_name: hf-internal-testing/llama-tokenizer
+    max_sequence_length: 512
+    client_spec:
+      class_name: "evaluate.benchmarks.helm.custom_hf_client.CustomHuggingFaceClient"

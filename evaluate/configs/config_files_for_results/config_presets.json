@@ -1,0 +1,22 @@
+{
+    "RepConfig": {
+        "control_mode": true,
+        "max_eval_instances": 100,
+        "max_new_tokens": 50
+    },
+    "methods": {
+        "zero-shot": {
+            "RepConfig": {"zero_shot": true},
+            "methods": {
+                "repe contrast vec": {
+                    "RepConfig": {
+                        "representation_method": "contrast-vector"
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2
+                    }
+                }
+            }
+        }
+    }
+}

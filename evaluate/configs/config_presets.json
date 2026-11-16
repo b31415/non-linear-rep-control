@@ -1,0 +1,115 @@
+{
+    "RepConfig": {
+        "control_mode": true,
+        "max_eval_instances": 100,
+        "max_new_tokens": 20
+    },
+    "methods": {
+        "zero-shot": {
+            "RepConfig": {"zero_shot": true},
+            "methods": {
+                "taylor 0.2 1var o3": {
+                    "RepConfig": {
+                        "representation_method": "taylor",
+                        "rep_reader_kwargs": {"order": 3}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 1,
+                        "order": 3,
+                        "remove_instructions": false
+                    }
+                },
+                "least-squares 0.2 1var o5 F1": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 5}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 1,
+                        "order": 5,
+                        "concept_template_fraction": 1,
+                        "remove_instructions": false
+                    }
+                },
+                "least-squares 0.2 1var o9 F0.6": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 9}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 1,
+                        "order": 9,
+                        "concept_template_fraction": 0.6,
+                        "remove_instructions": false
+                    }
+                },
+                "least-squares 0.2 1var o10 F0.6": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 10}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 1,
+                        "order": 10,
+                        "concept_template_fraction": 0.6,
+                        "remove_instructions": false
+                    }
+                },
+                "least-squares 0.2 20var o2": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 2}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 20,
+                        "order": 2,
+                        "concept_template_fraction": 1.0,
+                        "remove_instructions": false
+                    }
+                },
+                "least-squares -0.2 20var o2": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 2}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 20,
+                        "order": 2,
+                        "concept_template_fraction": 1.0,
+                        "remove_instructions": false
+                    }
+                },
+                "taylor 0.2 20var o2": {
+                    "RepConfig": {
+                        "representation_method": "taylor",
+                        "rep_reader_kwargs": {"order": 2}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 20,
+                        "order": 2,
+                        "remove_instructions": false
+                    }
+                },
+                "taylor -0.2 20var o2": {
+                    "RepConfig": {
+                        "representation_method": "taylor",
+                        "rep_reader_kwargs": {"order": 2}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": -0.2,
+                        "n_variations_per_concept_level": 20,
+                        "order": 2,
+                        "remove_instructions": false
+                    }
+                }
+            }
+        }
+    }
+}

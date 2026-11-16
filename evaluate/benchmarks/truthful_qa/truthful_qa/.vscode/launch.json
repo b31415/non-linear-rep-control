@@ -1,0 +1,26 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "args": [
+                "--models", "mistral-instruct", "mistral",// "gpt2-xl", "neo-small",//"neo-med",
+                "--metrics", "info", "mc", "judge", "bleu", "rouge",
+                // "--metrics", "mc",
+                "--preset", "qa",
+                "--input_path", "../TruthfulQA.csv",
+                "--info_model", "ft:babbage-002:personal::8L7tYzRq",
+                "--judge_model", "ft:babbage-002:personal::8L6MgDzK",
+                "--device", "0"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

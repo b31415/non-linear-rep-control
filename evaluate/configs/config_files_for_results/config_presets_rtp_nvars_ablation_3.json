@@ -1,0 +1,142 @@
+{
+    "RepConfig": {
+        "control_mode": true,
+        "max_eval_instances": 100,
+        "max_new_tokens": 20
+    },
+    "methods": {
+        "zero-shot": {
+            "RepConfig": {"zero_shot": true},
+            "methods": {
+                "least-squares -0.2 1var o2": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 2}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": -0.2,
+                        "n_variations_per_concept_level": 1,
+                        "order": 2,
+                        "concept_template_fraction": 1.0,
+                        "remove_instructions": false
+                    }
+                },
+                "least-squares 0.2 1var o2": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 2}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 1,
+                        "order": 2,
+                        "concept_template_fraction": 1.0,
+                        "remove_instructions": false
+                    }
+                },
+                "least-squares -0.2 5var o2": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 2}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": -0.2,
+                        "n_variations_per_concept_level": 5,
+                        "order": 2,
+                        "concept_template_fraction": 1.0,
+                        "remove_instructions": false
+                    }
+                },
+                "least-squares 0.2 5var o2": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 2}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 5,
+                        "order": 2,
+                        "concept_template_fraction": 1.0,
+                        "remove_instructions": false
+                    }
+                },
+                "least-squares -0.2 2var o2": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 2}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": -0.2,
+                        "n_variations_per_concept_level": 2,
+                        "order": 2,
+                        "concept_template_fraction": 1.0,
+                        "remove_instructions": false
+                    }
+                },
+                "least-squares 0.2 2var o2": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 2}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 2,
+                        "order": 2,
+                        "concept_template_fraction": 1.0,
+                        "remove_instructions": false
+                    }
+                },
+                "least-squares -0.2 10var o2": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 2}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": -0.2,
+                        "n_variations_per_concept_level": 10,
+                        "order": 2,
+                        "concept_template_fraction": 1.0,
+                        "remove_instructions": false
+                    }
+                },
+                "least-squares 0.2 10var o2": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 2}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 10,
+                        "order": 2,
+                        "concept_template_fraction": 1.0,
+                        "remove_instructions": false
+                    }
+                },
+                "taylor -0.2 1var o2": {
+                    "RepConfig": {
+                        "representation_method": "taylor",
+                        "rep_reader_kwargs": {"order": 2}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": -0.2,
+                        "n_variations_per_concept_level": 1,
+                        "order": 2,
+                        "remove_instructions": false
+                    }
+                },
+                "taylor 0.2 1var o2": {
+                    "RepConfig": {
+                        "representation_method": "taylor",
+                        "rep_reader_kwargs": {"order": 2}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 1,
+                        "order": 2,
+                        "remove_instructions": false
+                    }
+                }
+            }
+        }
+    }
+}

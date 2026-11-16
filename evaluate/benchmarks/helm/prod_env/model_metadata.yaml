@@ -1,0 +1,40 @@
+models:
+  - name: mistralai/Mistral-7B-Instruct-v0.2
+    display_name: Mistral 7B v0.2
+    description: Mistral 7B v0.2.
+    creator_organization_name: Mistral
+    access: open
+    release_date: 2023-12-12
+    tags: [TEXT_MODEL_TAG, FULL_FUNCTIONALITY_TEXT_MODEL_TAG]
+
+  - name: nlrep/surface-rep
+    display_name: SurfaceRep
+    description: Mistral 7B v0.2 + surface representatioon
+    creator_organization_name: Mistral/UNSW
+    access: open
+    release_date: 2024-05-21
+    tags: [TEXT_MODEL_TAG, FULL_FUNCTIONALITY_TEXT_MODEL_TAG]
+
+  - name: nlrep/curve-rep
+    display_name: CurveRep
+    description: Mistral 7B v0.2 + polynomial representation
+    creator_organization_name: Mistral/UNSW
+    access: open
+    release_date: 2024-05-21
+    tags: [TEXT_MODEL_TAG, FULL_FUNCTIONALITY_TEXT_MODEL_TAG]
+
+  - name: andyzoujm/representation-engineering
+    display_name: RepE
+    description: Mistral 7B v0.2 + contrast vector representation
+    creator_organization_name: Mistral/Zou-et-al
+    access: open
+    release_date: 2024-05-21
+    tags: [TEXT_MODEL_TAG, FULL_FUNCTIONALITY_TEXT_MODEL_TAG]
+
+  - name: stabilityai/stable-diffusion-3.5-medium
+    display_name: SD3.5-medium
+    description: Stable Diffusion 3.5 Medium
+    creator_organization_name: StabilityAI
+    access: open
+    release_date: 2025-10-31
+    tags: [TEXT_TO_IMAGE_MODEL_TAG]

@@ -1,0 +1,50 @@
+{
+    "RepConfig": {
+        "control_mode": true,
+        "max_eval_instances": 100,
+        "max_new_tokens": 20,
+        "model_name": "mistralai/Mistral-7B-Instruct-v0.2"
+    },
+    "methods": {
+        "zero-shot": {
+            "RepConfig": {"zero_shot": true},
+            "methods": {
+                "base with c=0.8 instruction": {
+                    "RepConfig": {
+                        "representation_method": "none",
+                        "apply_concept_to_base_prompt": true
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.8
+                    }
+                },
+                "lstsq c0.4_noInst": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 2}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.4,
+                        "n_variations_per_concept_level": 1,
+                        "concept_template_fraction": 0.6,
+                        "order": 2,
+                        "remove_instructions": false
+                    }
+                },
+                "lstsq c-0.4_noInst": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 2}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": -0.4,
+                        "n_variations_per_concept_level": 1,
+                        "concept_template_fraction": 0.6,
+                        "order": 2,
+                        "remove_instructions": false
+                    }
+                }
+            }
+        }
+    }
+}

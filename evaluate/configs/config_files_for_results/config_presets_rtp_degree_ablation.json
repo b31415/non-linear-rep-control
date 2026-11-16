@@ -1,0 +1,88 @@
+{
+    "RepConfig": {
+        "control_mode": true,
+        "max_eval_instances": 100,
+        "max_new_tokens": 20
+    },
+    "methods": {
+        "zero-shot": {
+            "RepConfig": {"zero_shot": true},
+            "methods": {
+                "least-squares 0.2 1var o3": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 3}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 1,
+                        "order": 3,
+                        "concept_template_fraction": 1.0,
+                        "remove_instructions": false
+                    }
+                },
+                "least-squares 0.2 1var o4": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 4}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 1,
+                        "order": 4,
+                        "concept_template_fraction": 1.0,
+                        "remove_instructions": false
+                    }
+                },"least-squares 0.2 1var o5": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 5}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 1,
+                        "order": 5,
+                        "concept_template_fraction": 1.0,
+                        "remove_instructions": false
+                    }
+                },"least-squares 0.2 1var o6": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 6}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 1,
+                        "order": 6,
+                        "concept_template_fraction": 1.0,
+                        "remove_instructions": false
+                    }
+                },"least-squares 0.2 30var o3": {
+                    "RepConfig": {
+                        "representation_method": "least-squares",
+                        "rep_reader_kwargs": {"order": 3}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 30,
+                        "order": 3,
+                        "concept_template_fraction": 1.0,
+                        "remove_instructions": false
+                    }
+                },
+                "taylor 0.2 1var o3": {
+                    "RepConfig": {
+                        "representation_method": "taylor",
+                        "rep_reader_kwargs": {"order": 3}
+                    },
+                    "RepInferenceConfig": {
+                        "control_strength": 0.2,
+                        "n_variations_per_concept_level": 1,
+                        "order": 3,
+                        "remove_instructions": false
+                    }
+                }
+            }
+        }
+    }
+}

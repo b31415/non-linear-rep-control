@@ -1,0 +1,34 @@
+{
+    "RepConfig": {
+        "control_mode": true,
+        "max_eval_instances": 100,
+        "max_new_tokens": 20
+    },
+    "methods": {
+        "zero-shot": {
+            "RepConfig": {"zero_shot": true},
+            "methods": {
+                "rep surface_0.5 30var": {
+                    "RepConfig": {
+                        "representation_method": "surface"
+                    },
+                    "RepInferenceConfig": {
+                        "concept_template_fraction": 0.6,
+                        "control_strength": 0.5,
+                        "n_variations_per_concept_level": 30
+                    }
+                },
+                "rep surface_0.5 30varb": {
+                    "RepConfig": {
+                        "representation_method": "surface"
+                    },
+                    "RepInferenceConfig": {
+                        "concept_template_fraction": 0.6,
+                        "control_strength": 0.5,
+                        "n_variations_per_concept_level": 30
+                    }
+                }
+            }
+        }
+    }
+}

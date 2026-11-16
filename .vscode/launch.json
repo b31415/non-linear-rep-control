@@ -1,0 +1,25 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceRoot}",
+            "env": { "PYTHONPATH": "${workspaceRoot}"},
+
+            // Args for eval_config.py
+            "args": [
+                // Text generation args
+                "--method-config-path", "./evaluate/configs/config_presets.json",
+                "--datasets", "real_toxicity_prompts", //"truthful_qa", "truthful_qa_generation", "bbq"
+            ],
+            "justMyCode": false
+        }
+    ]
+}
