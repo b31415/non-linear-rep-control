@@ -1,17 +1,20 @@
 # Nonlinear Representation Engineering Methods
 This repository demonstrates multiple nonlinear representation engineering methods, including the SurfaceRep method proposed in [Concept Control for LLM Safety Using Radial Basis Function Representations](https://link.springer.com/chapter/10.1007/978-981-95-4969-6_17).
 
-## Introduction
-
 ## Setup
 Using python3.10, run `pip install -r ./requirements.txt`.
 Run the main files `./evaluate/eval_helm.py` or `./evaluate/concept_demo.py` relative to this directory, such as by opening this directory in VS Code and running using the `launch.json` file.
 
-To be able to run the RealToxicityPrompts benchmark, follow the setup for PerspectiveAPI at https://crfm-helm.readthedocs.io/en/v0.5.4/benchmark/ using the `credentials.conf` file in the `./evaluate/benchmarks/helm/prod_env` directory.
+### Qualitative Results
+Run `./evaluate/concept_demo.py` for the GUI demonstrating control using the various methods. For example, the following image uses `concept_demo.py` to demonstrate control using the Taylor polynomial representation for order 3. The result was gained by selecting the method and concept preset, entering the prompt, clicking "Generate controlled response" then "Generate uncontrolled response" since "Generate controlled response" continues generating controlled tokens following whatever is currently in the "Prompt" and uncontrolled "Response" boxes.
+![Gradio demo](./images/gradio_output.png)
 
+### Quantitative Results
 `./evaluate/eval_helm.py` is used to collect quantitative results. Run via `python -m evaluate.eval_helm --method-config-path "./evaluate/config_presets.json" --datasets "real_toxicity_prompts" "bbq" "truthful_qa" "truthful_qa_generation"` to collect some of the quantitative results for toxicity, bias, multi-choice truthfulness and short answer truthfulness and informativeness evaluation.
 
 The code that fits the Taylor and least squares polynomial representations is in `./repe/rep_readers_non_linear.py`. 
+
+To be able to run the RealToxicityPrompts benchmark, follow the setup for PerspectiveAPI at https://crfm-helm.readthedocs.io/en/v0.5.4/benchmark/ using the `credentials.conf` file in the `./evaluate/benchmarks/helm/prod_env` directory.
 
 
 # References
